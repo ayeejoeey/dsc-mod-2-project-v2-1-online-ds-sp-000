@@ -19,12 +19,12 @@ Now, before going forward, here is a directory of this repo!
 ## Directory
 
 * The King County dataset is located: [here](kc_house_data.csv)
-* A copy of the column names and their descriptions for the dataset are located at: column_names.md 
-* The Read Me file (incase you need to come back) is located at: README.md
-* The preprocessing of the dataset is located at : Preprocessing.ipynb
-* The final modeling of the dataset is located at: Final-Modeling.ipynb
-* The preprocessed dataframe is located at : prepro_df.csv
-* The final model dataframe is located at: final_model_df.csv
+* A copy of the column names and their descriptions for the dataset are located: [here](column_names.md)
+* The Read Me file (incase you need to come back) is located: [here](README.md)
+* The preprocessing of the dataset is located: [here](Preprocessing.ipynb)
+* The final modeling of the dataset is located: [here](Final-Modeling.ipynb)
+* The preprocessed dataframe is located: [here](prepro_df.csv)
+* The final model dataframe is located: [here](final_model_df.csv)
 
 **Please keep in mind that there are two notebooks! One for preprocessing and one for final modeling!
 
