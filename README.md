@@ -1,16 +1,29 @@
 
-# Module 2 Final Project
+# Welcome to the King County Housing Project Repo!
 
 
 ## Introduction
 
-In this lesson, we'll review all of the guidelines and specifications for the final project for Module 2.
+Hello and welcome to my project repo!
+My name is Joe Sanchez and I'll be walking you through the directory, as well as give you an introduction to this project!
 
-## Objectives
-You will be able to:
-* Describe all required aspects of the final project for Module 2
-* Describe all required deliverables
-* Describe what constitutes a successful project
+To start, this project is to test how well I can accurately predict housing prices and its features!
+The King County Housing dataset will be analyzed to make these predictions. After it has been cleaned and processed of course.
+The dataset contains all types of features you'd normally find while looking for houses, such as bathrooms, bedrooms, and square footage! So it is now my responsibility to use these features and advanced statistics to build a Model that predicts the prices.
+
+Now, before going forward, here is a directory of this repo!
+
+## Directory
+
+* The King County dataset is located at: kc_house_data.csv
+* A copy of the column names and their descriptions for the dataset are located at: column_names.md 
+* The Read Me file (incase you need to come back) is located at: README.md
+* The preprocessing of the dataset is located at : Preprocessing.ipynb
+* The final modeling of the dataset is located at: Final-Modeling.ipynb
+* The preprocessed dataframe is located at : prepro_df.csv
+* The final model dataframe is located at: final_model_df.csv
+
+Please keep in mind that there are two notebooks! One for preprocessing and one for final modeling!
 
 ## Final Project Summary
 
