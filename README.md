@@ -1,5 +1,8 @@
 
 # Welcome to the King County Housing Project Repo!
+# By Joe Sanchez
+
+
 
 
 ## Introduction
@@ -15,7 +18,7 @@ Now, before going forward, here is a directory of this repo!
 
 ## Directory
 
-* The King County dataset is located at: kc_house_data.csv
+* The King County dataset is located: [here](kc_house_data.csv)
 * A copy of the column names and their descriptions for the dataset are located at: column_names.md 
 * The Read Me file (incase you need to come back) is located at: README.md
 * The preprocessing of the dataset is located at : Preprocessing.ipynb
@@ -23,151 +26,66 @@ Now, before going forward, here is a directory of this repo!
 * The preprocessed dataframe is located at : prepro_df.csv
 * The final model dataframe is located at: final_model_df.csv
 
-Please keep in mind that there are two notebooks! One for preprocessing and one for final modeling!
+**Please keep in mind that there are two notebooks! One for preprocessing and one for final modeling!
 
-## Final Project Summary
+## Business Approach/Goal
 
-Another module down--you're almost half way there!
+Now there isn't a given scenario for this project, so I decided to go with the idea that I am building a multiple linear regression model to predict housing costs for a real estate firm. My goal is to accurately predict the costs of housing features, and after, informing real estate agents of my findings that they can then use to help their clients buy or sell houses.
 
-![awesome](https://raw.githubusercontent.com/learn-co-curriculum/dsc-mod-2-project-v2-1/master/halfway-there.gif)
-
-All that remains in Module 2 is to put our newfound data science skills to use with a final project! You should expect this project to take between 20 and 25 hours of solid, focused effort. If you're done way quicker, go back and dig in deeper or try some of the optional "level up" suggestions. If you're worried that you're going to get to 30 hrs and still not even have the data imported, reach out to an instructor in Slack ASAP to get some help!
-
-## The Dataset
-
-For this project, you'll be working with the King County House Sales dataset. We've modified the dataset to make it a bit more fun and challenging.  The dataset can be found in the file `"kc_house_data.csv"`, in this repo.
-
-The description of the column names can be found in the column_names.md file in this repository. As with most real world data sets, the column names are not perfectly described, so you'll have to do some research or use your best judgment if you have questions relating to what the data means.
-
-You'll clean, explore, and model this dataset with a multivariate linear regression to predict the sale price of houses as accurately as possible.
-
-## The Deliverables
-
-For online students, there will be five deliverables for this project (Note: On-campus students may have different requirements, please speak with your instructor):
-
-1. A well documented **Jupyter Notebook** containing any code you've written for this project and comments explaining it. This work will need to be pushed to your GitHub repository in order to submit your project.  
-2. An organized **README.md** file in the GitHub repository that describes the contents of the repository. This file should be the source of information for navigating through the repository.
-3. A short **Keynote/PowerPoint/Google Slides presentation** (delivered as a PDF export) giving a high-level overview of your methodology and recommendations for non-technical stakeholders. Make sure to also add and commit this pdf of your non-technical presentation to your repository with a file name of presentation.pdf.
-4. **[A Blog Post](https://github.com/learn-co-curriculum/dsc-welcome-blogging-v2-1)**	
-5. A **Video Walkthrough** of your non-technical presentation. Some common video recording tools used are Zoom, Quicktime, and Nimbus. After you record your presentation, publish it on a service like YouTube or Google Drive, you will need a link to the video to submit your project.
-
-Note: On-campus students may have different requirements, please speak with your instructor.
-
-### Jupyter Notebook Must-Haves
-
-For this project, your Jupyter Notebook should meet the following specifications:
-
-#### Organization/Code Cleanliness
-
-* The notebook should be well organized, easy to follow,  and code should be commented where appropriate.  
-    * Level Up: The notebook contains well-formatted, professional looking markdown cells explaining any substantial code.  All functions have docstrings that act as professional-quality documentation
-* The notebook is written for technical audiences with a way to both understand your approach and reproduce your results. The target audience for this deliverable is other data scientists looking to validate your findings.
-
-#### Visualizations & EDA
-
-* Your project contains at least 4 meaningful data visualizations, with corresponding interpretations. All visualizations are well labeled with axes labels, a title, and a legend (when appropriate)  
-* You pose at least 3 meaningful questions and answer them through EDA.  These questions should be well labeled and easy to identify inside the notebook.
-    * **Level Up**: Each question is clearly answered with a visualization that makes the answer easy to understand.   
-* Your notebook should contain 1 - 2 paragraphs briefly explaining your approach to this project.
-
-#### Model Quality/Approach
-
-* Your model should not include any predictors with p-values greater than .05.  
-* Your notebook shows an iterative approach to modeling, and details the parameters and results of the model at each iteration.  
-    * **Level Up**: Whenever necessary, you briefly explain the changes made from one iteration to the next, and why you made these choices.  
-* You provide at least 1 paragraph explaining your final model.   
-* You pick at least 3 coefficients from your final model and explain their impact on the price of a house in this dataset.   
+I want to give real estate agents the tools to potentially out play their competitors by offering housing cost predictions at 95% accuracy using statistics and data analytics. Typically when someone wants to sell their home, they get an appraisal to know the value of their home. However, buyers don't always trust a sellers appraisal. That's where the real estate agent can come in. Although real estate agents aren't official home appraisers, that doesn't mean they can't use the tools home appraisers have.
+And thats where I come in. 
 
 
-### Non-Technical Presentation Must-Haves
+## Methodologies Used
 
-Another deliverable should be a Keynote, PowerPoint or Google Slides presentation delivered as a pdf file in your fork of this repository with the file name of `presentation.pdf` detailing the results of your project.  Your target audience is non-technical people interested in using your findings to maximize their profit when selling their home.
-
-Your presentation should:
-
-* Contain between 5 - 10 professional-quality slides.  
-    * **Level Up**: The slides should use visualizations whenever possible, and avoid walls of text.
-* Take no more than 5 minutes to present.   
-* Avoid technical jargon and explain the results in a clear, actionable way for non-technical audiences.   
-
-**_Based on the results of your models, your presentation should discuss at least two concrete features that highly influence housing prices._**
-
-### Blog Post Must-Haves
-
-Refer back to the [Blogging Guidelines](https://github.com/learn-co-curriculum/dsc-welcome-blogging-v2-1) for the technical requirements and blog ideas.
+* Multiple Linear Regression
+* Data cleaning (dealing with outliers and null values)
+* Data processing: Dealing with categorical values (creating dummy variables, binary format conversions)
+* Data processing: Dealing with non-categorical values (normalizing and dealing with multicollinearity)
+* Ordinary Least Squared (OLS) Modeling
+* Validating regression assumptions (linear, normality, qqplots, heteroscedasticity)
+* Plots used: regplot, boxplot, barplot, histplot, qqplot, scatterplot
 
 
-## The Process 
-The process for this project is identical to the process you followed for your module 1 project. We specified it again below as a refresher.
-(Note: On-campus students may have different processes, please speak with your instructor)
 
-### 1. Getting Started
+## Limitations
 
-Please start by reviewing this document. If you have any questions, please ask them in Slack ASAP so (a) we can answer the questions and (b) so we can update this repository to make it clearer.
+The King County Dataset has a wide variety of column features, as well as columns values! Which is great to work with. After further analysis, limitations have been set to fit the OLS Model. Reasons being, there were major outliers in some of the columns as a result of wide variety values. These outliers add complexity and can potentially add heavy skewness to our model. To make sure I can be as accurate as possible, limitations were applied, which alowed me to focus on what would be considered the middle class demographic.
 
-Be sure to let the instructor team know when you’ve started working on a project, either by reaching out over Slack or, if you are in a full-time or part-time cohort, by connecting with your Cohort Lead in your weekly 1:1. If you’re not sure who to reach out to, post in the #online-ds-sp-000 channel in Slack.
+Limitations include:
 
-Once you're done with this module, please start on the project. Do that by forking this repository, cloning it locally, and working in the student.ipynb file. Make sure to also add and commit a pdf of your presentation to the repository with a file name of `presentation.pdf`.
+* Price of houses < 1,000,000
+* Bathrooms       < 6
+* Bedrooms        < 7
+* Square footage  < 6,000
+* Floors          < 3
 
-### 2. The Project Review
+## Questions
 
-_Note: On-campus students may have different review processes, please speak with your instructor._
+Here are a few questions that came up during my modeling process.
 
-> **When you start on the project, please also reach out to an instructor immediately to schedule your project review** (if you're not sure who to schedule with, please ask in Slack!)
+* How does the number of bathrooms impact housing price?
 
-#### What to expect from the Project Review
+* What is the difference between condition and grade? How do they affect the prices of homes?
 
-Project reviews are focused on preparing you for technical interviews. Treat project reviews as if they were technical interviews, in both attitude and technical presentation *(sometimes technical interviews will feel arbitrary or unfair - if you want to get the job, commenting on that is seldom a good choice)*.
-
-The project review is comprised of a 45 minute 1:1 session with one of the instructors. During your project review, be prepared to:
-
-#### 1. Deliver your PDF presentation to a non-technical stakeholder.
-In this phase of the review (~10 mins) your instructor will play the part of a non-technical stakeholder that you are presenting your findings to. The presentation  should not exceed 5 minutes, giving the "stakeholder" 5 minutes to ask questions.
-
-In the first half of the presentation (2-3 mins), you should summarize your methodology in a way that will be comprehensible to someone with no background in data science and that will increase their confidence in you and your findings. In the second half (the remaining 2-3 mins) you should summarize your findings and be ready to answer a couple of non-technical questions from the audience. The questions might relate to technical topics (sampling bias, confidence, etc) but will be asked in a non-technical way and need to be answered in a way that does not assume a background in statistics or machine learning. You can assume a smart, business stakeholder, with a non-quantitative college degree.
-
-#### 2. Go through the Jupyter Notebook, answering questions about how you made certain decisions. Be ready to explain things like:
-    * "How did you pick the question(s) that you did?"
-    * "Why are these questions important from a business perspective?"
-    * "How did you decide on the data cleaning options you performed?"
-    * "Why did you choose a given method or library?"
-    * "Why did you select those visualizations and what did you learn from each of them?"
-    * "Why did you pick those features as predictors?"
-    * "How would you interpret the results?"
-    * "How confident are you in the predictive quality of the results?"
-    * "What are some of the things that could cause the results to be wrong?"
-
-Think of the first phase of the review (~30 mins) as a technical boss reviewing your work and asking questions about it before green-lighting you to present to the business team. You should practice using the appropriate technical vocabulary to explain yourself. Don't be surprised if the instructor jumps around or sometimes cuts you off - there is a lot of ground to cover, so that may happen.
-
-If any requirements are missing or if significant gaps in understanding are uncovered, be prepared to do one or all of the following:
-* Perform additional data cleanup, visualization, feature selection, modeling and/or model validation
-* Submit an improved version
-* Meet again for another Project Review
-
-What won't happen:
-* You won't be yelled at, belittled, or scolded
-* You won't be put on the spot without support
-* There's nothing you can do to instantly fail or blow it
-
-**Please note: We need to receive the URL of your repository at least 24 hours before and please have the project finished at least 3 hours before your review so we can look at your materials in advance.**
+* What are the most significant features real estate agents need to know about?
 
 
-## Submitting your Project
+## Recommendations
 
- You’re almost done! In order to submit your project for review, include the following links to your work in the corresponding fields on the right-hand side of Learn.
+There are many ways to go about building a multiple regression model using the King County Dataset.
+Many avenues were explored, and many avenues have yet to be discovered. The dataset contains wide variety of features, however I was not able to add every single one, nor fully clean and process every single one.
+Here's a list of features that needed to be more looked at for future work:
 
- 1. **GitHub Repo:** Now that you’ve completed your project in Jupyter Notebooks, push your work to GitHub and paste that link to the right. (If you need help doing so, review the resources [here](https://docs.google.com/spreadsheets/d/1CNGDhjcQZDRx2sWByd2v-mgUOjy13Cd_hQYVXPuzEDE/edit#gid=0).)
-_Reminder: Make sure to also add and commit a pdf of your non-technical presentation to the repository with a file name of presentation.pdf._
-2. **Blog Post:** Include a link to your blog post.
-3. **Record Walkthrough:** Include a link to your video walkthrough.
+* - Lat and Long are both individual columns of the dataset. Combining these two columns respectively may result in significant results.
 
- Hit "I'm done" to wrap it up. You will receive an email in order to schedule your review with your instructor.
- 
- 
-## Grading Rubric
-Online students can find a PDF of the grading rubric for the project [here](https://github.com/learn-co-curriculum/dsc-mod-2-project-v2-1/blob/master/mod2_project_rubric.pdf). On-campus students may have different review processes, please speak with your instructor.
+* - Date is included for each house. The date intels when the house was bought. Further analysis may prove beneficial to the R^2 value.
+
+* - Zipcode was also included with each house. Although it's not common for home buyers to research zipcodes specifically, the feature may show underlying significance to the overall model.
+
+## Conclusion
+
+Thank you so much for reviewing this Read Me, and I hoped this helped give an overall summary of what this repo contains.
 
 
-## Summary
 
-The end of module projects and project reviews are a critical part of the program. They give you a chance to both bring together all the skills you've learned into realistic projects and to practice key "business judgement" and communication skills that you otherwise might not get as much practice with.
