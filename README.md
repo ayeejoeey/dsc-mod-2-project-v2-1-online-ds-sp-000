@@ -60,6 +60,12 @@ Limitations include:
 * Square footage  < 6,000
 * Floors          < 3
 
+## Sneak Peak
+
+Here's a quick overview of my work in building a multiple linear regression model to predict the prices of home in King County.
+
+<img src="/Users/Joe/Desktop/Mod 2 Project/Screen Shot 2020-12-17 at 3.58.55 PM.png" width="600>
+
 ## Questions
 
 Here are a few questions that came up during my modeling process.
