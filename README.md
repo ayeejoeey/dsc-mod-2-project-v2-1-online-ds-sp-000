@@ -64,7 +64,7 @@ Limitations include:
 
 Here's a quick overview of my work in building a multiple linear regression model to predict the prices of home in King County.
 
-<img src="price-over-1m.png" width="600"/>
+![Distplot Before Limitation](price-over-1m.png)
 
 ## Questions
 
