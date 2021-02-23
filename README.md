@@ -79,7 +79,7 @@ Going forward, I now had a cleaned dataframe, and to visualize how each of the c
 
 When it came to modeling I made sure to validate assumptions. One of which was checking for homoscedasticity.
 
-![Homoscedasticity]()
+![Homoscedasticity](https://github.com/ayeejoeey/dsc-mod-2-project-v2-1-online-ds-sp-000/blob/master/Visuals/homoscedasticity.png)
 
 While modeling I was able to answer a few potential questions and make some visuals to display my answers.
 
