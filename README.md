@@ -65,17 +65,17 @@ Limitations include:
 Here's a quick overview of my work in building a multiple linear regression model to predict the prices of home in King County.
 
 For limitations I simply got rid of outliers by altering the dataframe's column values by running this code:
-![limitation code]()
+![limitation code](https://github.com/ayeejoeey/dsc-mod-2-project-v2-1-online-ds-sp-000/blob/master/Visuals/limitations.png)
 
 And to visualize what this code does, I iterated through each column and applied a distplot. Here's an example of the price limitation before and after.
 
-![Distplot Before Limitation]()
+![Distplot Before Limitation](https://github.com/ayeejoeey/dsc-mod-2-project-v2-1-online-ds-sp-000/blob/master/Visuals/price-over-1m.jpg)
 
-![Distplot After Limitation]()
+![Distplot After Limitation](https://github.com/ayeejoeey/dsc-mod-2-project-v2-1-online-ds-sp-000/blob/master/Visuals/price-under-1m.jpg)
 
 Going forward, I now had a cleaned dataframe, and to visualize how each of the column features correlate to price, I created a bar graph from seaborn!
 
-![Predictors in Correlation to Price]()
+![Predictors in Correlation to Price](https://github.com/ayeejoeey/dsc-mod-2-project-v2-1-online-ds-sp-000/blob/master/Visuals/predictors-correlation.jpg)
 
 When it came to modeling I made sure to validate assumptions. One of which was checking for homoscedasticity.
 
@@ -83,7 +83,7 @@ When it came to modeling I made sure to validate assumptions. One of which was c
 
 While modeling I was able to answer a few potential questions and make some visuals to display my answers.
 
-![Coefficient Correlations]()
+![Coefficient Correlations](https://github.com/ayeejoeey/dsc-mod-2-project-v2-1-online-ds-sp-000/blob/master/Visuals/coefficient-correlation.jpg)
 
 
 ## Questions
