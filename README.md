@@ -64,7 +64,7 @@ Limitations include:
 
 Here's a quick overview of my work in building a multiple linear regression model to predict the prices of home in King County.
 
-![Distplot Before Limitation](price-over-1m.jpg)
+![Distplot Before Limitation](https://raw.githubusercontent.com/ayeejoeey/dsc-mod-2-project-v2-1-online-ds-sp-000/master/Visuals/price-under-1m.jpg)
 
 ## Questions
 
